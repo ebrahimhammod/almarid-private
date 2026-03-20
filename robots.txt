@@ -1,0 +1,6 @@
+# robots.txt
+User-agent: *
+Allow: /
+Sitemap: https://almarid-private.com/sitemap.xml
+Disallow: /includes/
+Disallow: /lib/

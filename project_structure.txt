@@ -1,0 +1,24 @@
+.almarid-private
+|____images
+| |____favicon-32.png
+| |____logo-512.png
+|____includes
+| |____functions
+| | |____functions.php
+| |____templates
+| | |____Footer.php
+| | |____header.php
+| | |____navbar.php
+|____index.php
+|____init.php
+|____services.php
+|____about.php
+|____lib
+| |____css
+| | |____style.css
+| |____js
+| | |____script.js
+|____project_structure.txt
+
+
+ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' > project_structure.txt
