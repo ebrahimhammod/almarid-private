@@ -1,0 +1,51 @@
+# تشغيل محرك إعادة الكتابة
+RewriteEngine On
+RewriteBase /almarid-private/
+
+# ========================================
+# استثناء الملفات والمجلدات الحقيقية (CSS, JS, IMAGES)
+# ========================================
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ========================================
+# إزالة .php من الروابط
+# ========================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# ========================================
+# إعادة توجيه الصفحات الرئيسية
+# ========================================
+RewriteRule ^home$ index.php [L]
+RewriteRule ^$ index.php [L]
+
+# ========================================
+# تحسين الروابط للصفحات الثابتة
+# ========================================
+RewriteRule ^services$ services.php [L]
+RewriteRule ^about$ about.php [L]
+RewriteRule ^accounting$ accounting.php [L]
+RewriteRule ^logo-design$ logo-design.php [L]
+
+# ========================================
+# معالجة معلمات الخدمة
+# ========================================
+RewriteRule ^service/([a-z]+)$ service-details.php?service=$1 [L,QSA]
+
+# ========================================
+# رابط الاتصال
+# ========================================
+RewriteRule ^contact$ index.php [L,NE]
+
+# ========================================
+# منع عرض محتويات المجلدات
+# ========================================
+Options -Indexes
+
+# ========================================
+# معالجة الأخطاء
+# ========================================
+ErrorDocument 404 /almarid-private/index.php
