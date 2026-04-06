@@ -144,6 +144,26 @@ include_once "init.php";
                         </a>
                     </div>
                 </div>
+                 <!-- المشروع 4: ساعات mywatch -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/mywatch_header_only.webp" alt="ساعات mywatch - متجر ساعات فاخرة">
+                    </div>
+                    <div class="project-info">
+                        <h3>متجر ساعات mywatch</h3>
+                        <p>متجر إلكتروني متخصص في بيع الساعات الفاخرة، يقدم تشكيلة مميزة من أرقى الماركات العالمية مثل
+                            رولكس، أوميغا، كارتييه وبريتلينغ مع خدمة شحن مجاني وضمان شامل.</p>
+                        <div class="project-tech">
+                            <span>متجر إلكتروني</span>
+                            <span>ساعات فاخرة</span>
+                            <span>تجارة إلكترونية</span>
+
+                        </div>
+                        <a href="http://www.mywatch.free.nf/?i=1" target="_blank" class="project-link">
+                            زيارة الموقع <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
